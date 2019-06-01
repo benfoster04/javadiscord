@@ -97,5 +97,17 @@ Sets the colour of an already initialised Embed instance. Format must not includ
 ```
 Returns the JSONObject class of the embed. .toJSONString() method is also available here to have webhook appplication/json content-type usable body.
 
+## Diagnosis
+### Help me I set the colour using the method and it's that dark purple colour pls help
+The colour will only set if the hex has no hashtag (#) and is 6 characters long. Anything other than that, it's dark purple until you get it right.
+### It's telling me to read the fucking manual! I'm christian you kn-
+First of all, I don't care. Second of all, you didn't set a title or description. Get on with it.
+### I'm getting malformed URL error how do I fix?
+Get your URL right. It should be inside quotation marks to make it a string.
+### I'm not getting the webhook in my channel, halppppp
+The likely hood is that the response code from Discord was error code 400. This indicates that the body that was sent was malformed and not valid. The 1. cause for something like that is non-String data types attempting to be used in the title or description of the body. Another reason would be using a function (void) inside the title or description. You can't do that, it needs to be seperate into a String data type variable.
+
+### If your issue is still not resolved, please contact me on Discord: LatencyPain#7893
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
