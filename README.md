@@ -114,7 +114,7 @@ Get your URL right. It should be inside quotation marks to make it a string.
 ### I'm not getting the webhook in my channel, halppppp
 The likely hood is that the response code from Discord was error code 400. This indicates that the body that was sent was malformed and not valid. The 1. cause for something like that is non-String data types attempting to be used in the title or description of the body. Another reason would be using a function (void) inside the title or description. You can't do that, it needs to be seperate into a String data type variable.
 
-### If your issue is still not resolved, please contact me on Discord: LatencyPain#7893
-
+### If your issue is still not resolved, please contact me on Discord: LatencyPain#7893, or open an issue in the Github Repo.
+### If you have any suggestions for what I could add to the code, create a pull request or open an issue with the *"enhancement"* label.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
