@@ -68,7 +68,6 @@ public class Embed {
 		if ( hex.length() != 6 ) {this._colour = 2752554;}
 		else {this._colour = toDec(hex);}
 	}
-	@SuppressWarnings("unchecked")
 	public JSONObject rtrn() {
 		JSONObject j = new JSONObject();
 		JSONArray embeds = new JSONArray();
@@ -79,10 +78,15 @@ public class Embed {
 			embedChild.put("description", "Uhoh, it looks like someone didn't read the documentation properly.\nWhat's happened is that you've not defined the title or description of the embed before sending it.\nPlease in future, read the fucking manual: github.com/benfoster04/javadiscord");
 			embedChild.put("color","FF0000");
 		} else {
-			if ( _title != null ) {embedChild.put("title", _title);}
-			else {
-				if ( _description != null ) {embedChild.put("description", _description);}
+			if ( _title != null && _description != null ) {
+				embedChild.put("title", _title);
+				embedChild.put("description", _description);
+			} else {
+				if ( _title != null ) {embedChild.put("title", _title);}
+				else {if ( _description != null ) {embedChild.put("description", _description);}
+				}
 			}
+			
 		}
 		embedChild.put("color", _colour);
 		embedChild.put("timestamp", _time);
