@@ -38,7 +38,6 @@ public class Webhook {
 	}
 	public boolean send(Embed msg) {
 		String body = msg.rtrn().toJSONString();
-		System.out.println(body);
 		HttpURLConnection connection = this.connect();
 		if ( connection == null ) {return false;}
 		DataOutputStream outStream;
