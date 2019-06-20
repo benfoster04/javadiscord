@@ -1,5 +1,5 @@
 # javadiscord
-A simple HTTP client and quick embed generator that allows for easy sending of embeds to Discord channels using webhooks. The code is easy to implement, setup, and use.
+A simple HTTP client and quick embed generator that allows for easy sending of embeds to Discord channels using webhooks. The code is lightweight and easy to implement, setup, and use.
 
 ### Directory:
  - [Setup](#Setup)
