@@ -1,6 +1,9 @@
 # javadiscord
 A simple HTTP client and quick embed generator that allows for easy sending of embeds to Discord channels using webhooks. The code is lightweight and easy to implement, setup, and use.
 
+### Quick and cheeky notice
+As a future update I'm gonna have this available on some Maven repo somewhere so you can use it in Maven as a dependency.
+
 ### Directory:
  - [Setup](#Setup)
  - [Usage](#Usage)
